@@ -6,7 +6,7 @@ update without a tap.
 
 ## Status
 
-Version 0.1.1. Not yet in Kodi's official repository: install it from the zip of the
+Version 0.1.2. Not yet in Kodi's official repository: install it from the zip of the
 [latest release](https://github.com/refracters/refract-kodi/releases/latest).
 
 ## What it does
