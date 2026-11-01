@@ -71,7 +71,14 @@ class RefractPlayer(xbmc.Player):
         self.playing = playing
 
     def onPlayBackEnded(self):
+        # Kodi reached the end by itself: the last periodic reading can be seconds short of it.
+        if self.playing and self.playing.total:
+            self.playing.furthest = self.playing.total
         self._finish()
+
+    def onPlayBackSeek(self, time_ms, seek_offset_ms):
+        if self.playing:
+            self.playing.furthest = max(self.playing.furthest, time_ms / 1000.0)
 
     def onPlayBackStopped(self):
         self._finish()
