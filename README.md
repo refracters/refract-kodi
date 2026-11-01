@@ -6,9 +6,8 @@ update without a tap.
 
 ## Status
 
-Version 0.1.0, not released. It relies on two pieces of Refract's public API that are not live yet:
-the lookup by external id (`GET /v1/search/{tmdb|imdb|tvdb}/{id}`) and the add-on's client
-metadata document (`https://getrefract.app/developers/clients/kodi.json`).
+Version 0.1.1. Not yet in Kodi's official repository: install it from the zip of the
+[latest release](https://github.com/refracters/refract-kodi/releases/latest).
 
 ## What it does
 
